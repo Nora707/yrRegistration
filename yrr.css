@@ -111,7 +111,7 @@ fieldset{
 	margin:1px auto;
 }
 form fieldset span{
-	margin: 15px auto;
+	margin: 5px auto;
 /* 	position:relative; */
 }
 .newsLetterCenter{
@@ -145,6 +145,10 @@ label, input, p{
 	margin:15px auto;
 /* 	position:relative; */
 }
+.labelForInput{
+	margin-bottom:0;
+	margin-top:8px;
+}
 #newsLetterBox{
 	margin:auto;
 }
@@ -159,7 +163,7 @@ label, input, p{
 	width:20vw;
 	min-width:150px; */
 	background-color: ghostwhite;
-	border: 5px solid #3C3C3C;
+	border-top: 3px solid #3C3C3C;
 		margin:15px 1.5vw;
 		padding:1vw;
 		width:16vw;
@@ -168,10 +172,29 @@ label, input, p{
 p{
 	text-align:center;
 }
+#popup{
+	min-width:21vw;
+	min-height:8vw;
+	color:#FFE221;
+	background-color:#3C3C3C;
+	position:fixed;
+	margin:0 auto;
+	left:39%;
+	top:18vw;
+	z-index:500;
+	text-align:center;
+	font-size:0,3vw;
+	display:none;
+	padding-top:1vw;
+	padding-left:3px;
+	padding-right:3px;
+	vertical-align:center;
+	transition:all 2s;
+}
 .threeQestions{
 	display:inline-block;
 	margin:0 auto;
-	border: 5px solid #3C3C3C;
+	border-top: 5px solid #3C3C3C;
 	text-align:left;
 	min-width:178px;
 }
@@ -192,17 +215,108 @@ p{
 } */
 [type="text"]{
 	display:block;
-	margin: 15px auto;
+	margin: 5px auto;
 	width:18vw;
 	height:3vh;
 	min-width:180px;
 	min-height:20px;;
 }
 #writeInFieldset{
-		border: 5px solid #3C3C3C;
+		border: 0px solid #3C3C3C;
 }
 #writeInFieldset input{
 	border:2px solid #3C3C3C;
 	border-radius:3px;
 }
 
+/* ----------- Mobilphone----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 32px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+  body{
+	  font-size:4vw;
+  }
+label, input, p, {
+	margin:0,2vw auto;
+}
+.labelForInput{
+	margin-bottom:0;
+	margin-top:0;
+}
+/* legend{
+	display:inline-block;
+	width:80%;
+	min-width:180px;
+}
+legend label{
+	display:block;
+	position:relative;
+	width:17vw;
+	min-width:180px;
+} */
+#writeInFieldset input{
+	border:1px solid #3C3C3C;
+	border-radius:3px;
+	width:80%;
+}
+#writeInFieldset {
+	border:0px solid #3C3C3C;
+
+}
+#writeInFieldset span{
+		width:80%;
+		margin:0 auto;
+}
+#email-holder input:first-child{
+	width:10vw;
+	min-width:40%;
+}
+#email-holder input:last-child{
+	width:8vw;
+	min-width:40%;
+}
+.threeQestions{
+	display:block;
+	margin:0 auto;
+	border-top: 2px solid #3C3C3C;
+	text-align:left;
+
+	width:100%;
+}
+.threeQestions label{
+	clear:both;
+	display:block;
+	width:50%;
+}
+#radioFieldset{
+	margin:auto;
+	position:relative;
+	text-align:center;
+	border:0;
+
+}
+#radioFieldset div{
+
+	background-color: ghostwhite;
+	border:0;
+	border-top: 2px solid #3C3C3C;
+		
+		padding:1vw;
+		padding-left:2vw;
+		padding-right:2vw;
+		width:90%;
+
+} 
+#fullForm{
+	margin: 5px auto;
+	border: 3vw solid #FFE221;
+	background-color:ghostwhite;
+	min-width:90%;
+	
+}
+
+}
