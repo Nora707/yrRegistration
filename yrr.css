@@ -1,17 +1,61 @@
-body{
-	font-family: "Montserrat", sans-serif;
-	background-color:#3C3C3C;
+*{
+	border:1px solid;
+	border-radius:4px;
 }
 header, footer{
 	background-color:#3C3C3C;
 	color:#FFE221;
 }
-header span{
-	margin:0 auto;
+body{
+	font-family: "Montserrat", sans-serif;
 }
-
+label span{
+	font-family:"Open Sans";
+}
 button{
 	font-family: "Montserrat", sans-serif;
+}
+img{
+	width: 15%;
+    height: auto;
+}
+[type="text"]{
+	display:block;
+	margin: 15px auto;
+	width:18vw;
+	height:3vh;
+	min-width:180px;
+	min-height:20px;;
+}
+span [type="text"]{
+	display:inline-block;
+	
+}
+form fieldset span{
+	margin: 15px auto;
+	position:relative;
+}
+fieldset{
+	margin:1px auto;
+}
+label, input, p, legend{
+	margin:15px auto;
+	position:relative;
+
+}
+legend label{
+	display:block;
+	position:relative;
+	width:17vw;
+	min-width:180px;
+}
+legend{
+	display:inline-block;
+	width:20vw;
+	min-width:180px;
+}
+p{
+	text-align:center;
 }
 button{
 	background-color:#3C3C3C;
@@ -31,7 +75,7 @@ button{
 	transition: all 0.7s;
 	width:20%;
 	min-width:230px;
-	margin: 9px auto;
+	margin: 0 auto;
 	position:relative;
 }
 button:hover{
@@ -40,169 +84,137 @@ button:hover{
 	border: 2px solid #FFE221;
 }
 button.done{
-	background-color:#FFE221;
-	color:#3C3C3C;
+	background-color:#3C3C3C;
+	color:#FFE221;
 	transition: all 0.7s;
-	border: 3px solid #3C3C3C;
-	outline:0;
+	border: 2px solid #3C3C3C;
+	
 }
 button.done:hover{
-	background-color:#FFE221;
-	color:#3C3C3C;
+	background-color:#3C3C3C;
+	color:#FFE221;
 	cursor: auto;
-	border: 3px solid #3C3C3C;
-	outline:0;
+	border: 2px solid #3C3C3C;
+	
 }
 .center{
 	display:block;
 	position:relative;
 	width:18vw;
 	min-width:180px;
-}
-#email-holder{
-	width:20vw;
-	display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-#email-holder input:first-child{
-	width:10vw;
-	min-width:90px;	
-	-webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 0 1 auto;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-}
-#email-holder input:last-child{
-	width:8vw;
-	min-width:60px;		
-				
-	-webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 0 1 auto;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-}
-fieldset{
-	margin:1px auto;
-}
-form fieldset span{
-	margin: 15px auto;
-/* 	position:relative; */
-}
-.newsLetterCenter{
-	
-		margin:12px auto;
 
-	position:relative;
-		text-align:center;
-}
-#fullForm{
-	margin: 5px auto;
-	border: 3vw solid #FFE221;
-	background-color:ghostwhite;
-	max-width:70%;
-	
 }
 .full-window{
 	width:100%;
 }
-img{
-	width: 15%;
-    height: auto;
+#email-holder{
+	width:20vw;
 }
-input:focus{
-	outline: #FFE221 solid thin;
+#email-holder input:first-child{
+	width:10vw;
+	min-width:90px;
 }
-label span{
-	font-family:"Open Sans";
+#email-holder input:last-child{
+	width:8vw;
+	min-width:60px;
 }
-label, input, p{
+/* ----------- laptop and pc ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+}
+
+
+/* ----------- Mobilphone----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  label, input, p, legend{
 	margin:15px auto;
-/* 	position:relative; */
+
 }
-#newsLetterBox{
-	margin:auto;
-}
-#radioFieldset span label{
+legend label{
 	display:block;
-/* 	position:relative; */
+	position:relative;
 	width:17vw;
 	min-width:180px;
 }
-#radioFieldset div{
-/* 
+legend{
+	display:inline-block;
 	width:20vw;
-	min-width:150px; */
-	background-color: ghostwhite;
-	border: 5px solid #3C3C3C;
-		margin:15px 1.5vw;
-		padding:1vw;
-		width:16vw;
-
-} 
-p{
-	text-align:center;
-}
-.threeQestions{
-	display:inline-block;
-	margin:0 auto;
-	border: 5px solid #3C3C3C;
-	text-align:left;
-	min-width:178px;
-}
-.threeQestions label{
-	clear:left;
-	display:block;
-}
-#radioFieldset{
-	margin:auto;
-	position:relative;
-	text-align:center;
-	border:0;
-}
-
-/* span [type="text"]{
-	display:inline-block;
-	
-} */
-[type="text"]{
-	display:block;
-	margin: 15px auto;
-	width:18vw;
-	height:3vh;
 	min-width:180px;
-	min-height:20px;;
-}
-#writeInFieldset{
-		border: 5px solid #3C3C3C;
-}
-#writeInFieldset input{
-	border:2px solid #3C3C3C;
-	border-radius:3px;
 }
 
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+
+/* ----------- Tablet----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* ----------- Galaxy Tab 10.1 ----------- */
+
+/* Portrait and Landscape */
+@media 
+  (min-device-width: 800px) 
+  and (max-device-width: 1280px) {
+
+}
+
+/* Portrait */
+@media 
+  (max-device-width: 800px) 
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media 
+  (max-device-width: 1280px) 
+  and (orientation: landscape) { 
+
+}

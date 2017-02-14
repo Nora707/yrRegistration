@@ -27,8 +27,8 @@ phoneNumber.oninput=validatingPhoneNumber;
 	/*  doesn't let invalid characters in the name inputs  */
 function validatingName(){//ŐŐ szó közben beszúrt rossz karaktert hogy lehet eltüntetni, IT miért enged számot
 	var nameLength=this.value.length;
-	console.log('validtaingName');
-	if (!/^[a-zéáűúőóüöí \.-]+$/ig.test(this.value)) {
+	
+	if (!/^[a-zéáűúőóüöí .-]+$/ig.test(this.value)) {
 		console.log("Invalid characters");
 		this.value=this.value.substring(0,nameLength-1); //deletes invalid character
 	}
@@ -42,8 +42,7 @@ function validatingEmailLocal(){
 	if (this.value.indexOf('..')>-1 || this.value.indexOf('.')==0 || this.value.indexOf('.')==emailLength ){
 		console.log("Invalid email");// ŐŐ HOVA IRJAM KI ,HOGYAN JELEZZEM HOGY ROSSZ
 		//this.value=this.value.substring(0,nameLength-1); //deletes invalid character
-	} 
-
+	}
 }
 
 function validatingEmailDomain(){
@@ -58,7 +57,7 @@ function validatingEmailDomain(){
 function validatingPhoneNumber(){
 	var phoneLength=this.value.length;
 	
-	if (!/[0-9]/g.test(this.value)) {
+	if (!/^\+[0-9]*$/g.test(this.value)) {
 		console.log("Invalid characters");
 		this.value=this.value.substring(0,phoneLength-1); //deletes invalid character
 	}
